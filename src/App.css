@@ -22,6 +22,32 @@
   color: black;
 }
 
+.text {
+  opacity: 0;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeinText {
+  animation: fadein 2s;
+  font-size: 200%;
+  font-family: 'Amatic SC';
+  color: black;
+}
+
 .footer {
   border-top: .1rem solid #ff4556;
 }
@@ -35,4 +61,8 @@ img.logos {
   position: absolute;
   bottom:10px;
   height: 5%;
+}
+
+.arrow {
+  transform: rotate(0.25turn);
 }
