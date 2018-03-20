@@ -1,5 +1,9 @@
 @import "./fonts.css";
 
+html {
+  height: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -20,10 +24,6 @@
   font-size: 250%;
   font-family: 'Amatic SC';
   color: black;
-}
-
-.text {
-  opacity: 0;
 }
 
 @keyframes fadein {
@@ -48,21 +48,43 @@
   color: black;
 }
 
+.invisible {
+  opacity: 0;
+}
+
+.githubLogo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.linkedinLogo {
+  display: inline-block;
+}
+
+.emailLogo {
+  display: inline-block;
+}
+
+img.github {
+  animation: fadein 2s;
+  max-width: 100px;
+  max-height: 50px;
+}
+
+img.linkedin {
+  animation: fadein 2s;
+  max-width: 100px;
+  height: 50px;
+  padding-left: 1px;
+}
+
+img.email {
+  animation: fadein 2s;
+  max-width: 100px;
+  height: 50px;
+  padding-left: 1px;
+}
+
 .footer {
-  border-top: .1rem solid #ff4556;
-}
-
-div.logos  {
-  display:inline-block;
-  width: 3%
-}
-
-img.logos {
-  position: absolute;
-  bottom:10px;
-  height: 5%;
-}
-
-.arrow {
-  transform: rotate(0.25turn);
+  text-align: center;
 }
